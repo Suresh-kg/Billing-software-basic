@@ -56,7 +56,7 @@ def init_db():
     conn.commit()
     conn.close()
 
-# ---------------- BILLING LOGIC ----------------
+# ---------------- BILLING LOGIN OPERATION ----------------
 cart = []
 
 def get_product(barcode):
@@ -177,7 +177,7 @@ def show_bill(bill_id, date, subtotal, gst, total):
     receipt.insert(END, f"Date: {date}\n")
     receipt.insert(END, "\nThank You! Visit Again 🙏")
 
-# ---------------- GUI ----------------
+# ---------------- LOGIN AND OTHER GUI ----------------
 init_db()
 
 root = Tk()
